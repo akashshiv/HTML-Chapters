@@ -4,15 +4,19 @@
         <title>Test</title>
     </head>
     <body>
-        <h1>First HTML Page</h1>
-        <p>Write an essay about HTML</p>
-        <a href="https://Google.com">Google Link</a><br>
-        <img src="./download.png" alt="Google">
-        <ul>
-            <li>Option 1</li>
-            <li>Option 2</li>
-            <li>Option 3</li>
-            <li>Option 4</li>
+        <h1 title="I am heading">First HTML Page</h1>
+        <p title="i am paragraph">Write an essay about HTML</p>
+        <a title="i am link" href="https://Google.com">Google Link</a><br>
+        <img title="i am image" src="./download.png" alt="Google"><br>
+        <input type="text" name="username" placeholder="username" disabled>
+        <!-- You can put attributes in parent and child tag. if child doesn't have same attribute then only  -->
+        <!-- parent tag will appy otherwise child tag will appy you can use multi duplicate tags but first  -->
+        <!-- tag will apply like title tag in ul and li option.  -->
+        <ul title="i am option">  
+            <li title="i am option" title="i am option 1">Option 1</li>
+            <li title="i am option 2">Option 2</li>
+            <li title="i am option 3">Option 3</li>
+            <li title="i am option 4">Option 4</li>
         </ul>
     </body>
 </html>
