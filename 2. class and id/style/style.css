@@ -1,5 +1,6 @@
 body{
     margin: 0px;
+    /* background-image: url('../autumn-colorful-colourful-33109.jpg'); */
 }
 a:nth-of-type(1){
     border: none;
@@ -18,7 +19,24 @@ a:hover{
 a img{
     border: 0px;
     margin-left: 100px;
-    /* display: block; */
     height: 400px;
     width: 600px;
+}
+table{
+    border-spacing: 5px;
+    border-collapse: collapse;
+    background-color: aqua;
+}
+th{
+    background-color: black;
+}
+tr:nth-child(odd){
+    background-color: #eee;
+}
+tr:nth-child(even){
+    background-color: #FFF;
+}
+td, th{
+    border: 1px solid blue;
+    border-spacing: 5px;
 }
