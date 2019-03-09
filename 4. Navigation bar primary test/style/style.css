@@ -1,0 +1,30 @@
+body{
+    margin: 0px;
+}
+ul{
+    margin: 0px;
+    padding: 0px;
+    /* text-align: center; */
+    list-style-type: none;
+    background-color: black;
+    color:white;
+    overflow: hidden;
+}
+li{
+    float : left;
+    /* display: inline-block; */
+    padding: 10px 20px;
+}
+li a{
+    text-decoration: none;
+    color:white;
+}
+iframe{
+    border: none;
+    margin: 0% 10%;
+    width: 80%;
+    height: 500px;
+}
+img{
+    max-width: 100%;
+}
