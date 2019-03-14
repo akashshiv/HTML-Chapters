@@ -1,0 +1,30 @@
+body{
+    margin: 0px;
+}
+nav{
+    height: 100px;
+    width: 100%;
+    background-color: #BDBDBD;
+}
+ul{
+    margin: 0px;
+    width: inherit;
+    height: inherit;
+}
+ul li{
+    float: left;
+    text-align: center;
+    padding: 25px;
+    width: 10%;
+    list-style-type: none;
+    transition: background-color .5s ease;
+}
+a{
+    font-size: 50px !important;
+    color: white;
+    text-decoration: none;
+}
+li:hover{
+    background-color: black;
+    color: white;
+}
