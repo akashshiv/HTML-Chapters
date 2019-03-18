@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hamburger</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="viewport" content="width=device-width ,intial-scale=1.0">
+        <link rel="stylesheet" href="./style/style.css" type="text/css">
+    </head>
+    <body>
+        <div class="container" onclick="funname(this)">
+            <div class="bar-1"></div>
+            <div class="bar-2"></div>
+            <div class="bar-3"></div>
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="#" class="fa fa-home"></a></li>
+                <li><a href="#" class="fa fa-search"></a></li>
+                <li><a href="#" class="fa fa-envelope"></a></li>
+                <li><a href="#" class="fa fa-globe"></a></li>
+                <li><a href="#" class="fa fa-trash"></a></li>
+            </ul>
+        </div>
+    <script>
+        function funname(x) {
+            x.classList.toggle("change");
+        }
+    </script>
+    </body>
+    
+</html>

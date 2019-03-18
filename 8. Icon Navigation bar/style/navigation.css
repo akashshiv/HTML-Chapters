@@ -2,11 +2,13 @@ body{
     margin: 0px;
 }
 .icon-bar{
+height: 100px;
    width: 100%;
    background-color: beige; 
    overflow: hidden;
 }
 .icon-bar a{
+    height: inherit;
     float: left;
     width: 20%;
     padding: 12px 0;
