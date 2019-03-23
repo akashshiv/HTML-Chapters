@@ -2,6 +2,7 @@ body{
     margin: 0;
 }
 .container{
+    cursor: pointer;
     padding: 30px;
     height: 100px;
     width: 100%;

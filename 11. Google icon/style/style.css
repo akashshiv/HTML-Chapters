@@ -1,0 +1,18 @@
+body{
+    margin: 0px;
+}
+.container{
+    margin: 10px;
+    padding: 20px;
+    height: 100px;
+    width: 100%;
+    background-color: black;
+    text-align: center;
+}
+div > i{
+    margin: 0px 20px 0px 20px;
+    font-size: 100px !important;
+    padding: 0px 10px 0px 10px;
+    color: white;
+
+}

@@ -1,0 +1,40 @@
+body{
+    margin: 0;
+}
+.auction{
+    cursor: pointer;
+    height: 100px;
+    width: 100%;
+    padding: 18px;
+    margin: 0px;
+    display: block;
+    text-align: center;
+    background-color: #eee;
+    color: #444;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+.active, .auction:hover {
+    background-color: #ccc;
+}
+  
+.subheader-1, .subheader-2, .subheader-3{
+    max-height: 0px;
+    padding: 0 18px;
+  background-color: white;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+.auction:after {
+    content: '\02795'; 
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+  }
