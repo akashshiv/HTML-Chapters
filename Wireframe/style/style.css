@@ -33,20 +33,107 @@ body{
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-align: center;
 }
 .heading-primary{
     color: white;
     text-transform: uppercase;
+    margin: 4vh;
 }
 .heading-primary-main{
     display: block;
     font-size: 50px;
     font-weight: 500;
     letter-spacing: 2vw;
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
 }
 .heading-primary-sub{
     display: block;
     font-size: 20px;
     font-weight: 500;
     letter-spacing: .6vw;
+    animation-name: moveInRight;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+}
+.btn:link, .btn:visited{
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    padding: 15px 20px;
+    background-color: #fff;
+    color: black;
+    border-radius: 100px;
+    transition: all .2s;
+    animation-name: moveButton;
+    animation-duration: .5s;
+    animation-delay: .75s;
+    animation-fill-mode: backwards;
+    animation-timing-function: ease-out;
+}
+
+.btn:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+}
+.btn:active{
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+}
+.btn::after{
+    content: "";
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+    background-color: white;
+    border-radius: 100px;
+    z-index: -1;
+    position: absolute;
+    transition: all .4s;
+}
+
+.btn:hover::after{
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+@keyframes moveButton{
+    0%{
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes moveInLeft{
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    80%{
+        transform: translateX(10px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+@keyframes moveInRight{
+    0%{
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    80%{
+        transform: translateX(-10px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
 }
